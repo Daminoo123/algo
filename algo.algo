@@ -1,0 +1,46 @@
+ALGORITHM 1 
+VAR
+    str : STRING := "the best in the world";
+    count : INTEGER = 0;
+BEGIN
+FOR  (int i=0;i< str.length();i++) Do 
+IF (str.charAt[i] !='') THEN
+ count++
+    
+END_IF
+END_FOR
+write(count)
+    
+END
+
+
+
+ALGORITHM 2
+VAR
+    str : STRING:= " the best in the world";
+    count: INTEGER =1;
+BEGIN
+    FOR  i in str Do
+    IF (i==" ") THEN
+        count += 1 ;
+    END_IF
+    END_FOR
+    write(count)
+
+END
+
+
+ALGORITHM vowels_nb
+VAR
+    str : STRING := "the best in the world";
+    count :INTEGER=0 ;
+    vowels: CHAR :=['a','e','i','o','u','y'];
+BEGIN
+    FOR i in str Do
+    IF i in vowels THEN
+    count+=1;
+    END_IF
+    vow=count
+   END_FOR
+   write(vow)
+END
